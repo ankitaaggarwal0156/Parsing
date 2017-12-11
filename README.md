@@ -11,13 +11,13 @@ Run train.trees.pre through unknown.py and save the output to train.trees.pre.un
   
 ## Learning Grammar
 We learn the grammar from the train.trees.pre.unk and create a probabilisitic CFG in the following format:
-       NP -> DT NN # 0.5
-       NP -> DT NNS # 0.5
-       DT -> the # 1.0
-       NN -> boy # 0.5
-       NN -> girl # 0.5
-       NNS -> boys # 0.5
-       NNS -> girls # 0.5
+       NP -> DT NN # 0.5<br>
+       NP -> DT NNS # 0.5<br>
+       DT -> the # 1.0<br>
+       NN -> boy # 0.5<br>
+       NN -> girl # 0.5<br>
+       NNS -> boys # 0.5<br>
+       NNS -> girls # 0.5<br>
 
 The rules are stored as a Dictionary.
 
@@ -31,7 +31,7 @@ Run your parser output through postprocess.py and save the output to dev.parses.
 python evalb.py dev.parses.post dev.trees
 
 ## Output:
-matching	396 brackets
-precision	0.91454965358
-recall	  0.84076433121
-F1	      0.87610619469
+matching	396 brackets<br>
+precision	0.91454965358<br>
+recall	  0.84076433121<br>
+F1	      0.87610619469<br>
